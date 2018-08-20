@@ -12,9 +12,20 @@
     </style>
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300" />
     <link rel="stylesheet" href="/css/main.css" />
-    <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
-    <!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
-    <noscript><link rel="stylesheet" href="/css/noscript.css" /></noscript>
+    <noscript>
+      <style>
+      body:after {
+    		display: none;
+    	}
+    	#main {
+    		-moz-transform: none !important;
+    		-webkit-transform: none !important;
+    		-ms-transform: none !important;
+    		transform: none !important;
+    		opacity: 1 !important;
+    	}
+      </style>
+    </noscript>
   </head>
   <body class="is-loading">
 
@@ -28,11 +39,10 @@
               <h1>Vitaly Sakada</h1>
               <p>Senior Oracle Engineer</p>
             </header>
-            
+
             <footer>
               <ul class="icons">
                 <li><a href="https://ua.linkedin.com/in/kelatev" class="fa fa-linkedin">LinkedIn</a></li>
-                <li><a href="https://www.facebook.com/kelatev" class="fa fa-facebook">Facebook</a></li>
               </ul>
             </footer>
           </section>
@@ -46,8 +56,6 @@
 
       </div>
 
-    <!-- Scripts -->
-      <!--[if lte IE 8]><script src="/js/respond.min.js"></script><![endif]-->
       <script>
         if ('addEventListener' in window) {
           window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
